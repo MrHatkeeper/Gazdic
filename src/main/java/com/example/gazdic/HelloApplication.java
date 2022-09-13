@@ -2,6 +2,7 @@ package com.example.gazdic;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -19,6 +20,8 @@ public class HelloApplication extends Application {
         usrs.add(new Person("COBOL", 98));
 
         TableView tableView = new TableView();
+        Button butt = new Button("X");
+        butt.setMaxSize(20,20);
 
         TableColumn<Person, String> nColumn = new TableColumn<>("první jméno");
         nColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
